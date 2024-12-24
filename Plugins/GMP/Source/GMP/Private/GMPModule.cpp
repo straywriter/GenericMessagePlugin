@@ -423,6 +423,7 @@ public:
 		});
 #endif
 #if PLATFORM_DESKTOP
+		/*
 		struct FHandleResult
 		{
 			FDelegateHandle Handle;
@@ -439,6 +440,7 @@ public:
 			[](UWorld* NewWorld) { ProcessXCommandFromCmdline(NewWorld, TEXT("PostStartPlay")); },
 			1);
 		//}));
+		*/
 #endif
 	}
 	virtual void ShutdownModule() override

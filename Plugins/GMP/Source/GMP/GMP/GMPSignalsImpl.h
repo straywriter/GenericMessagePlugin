@@ -253,6 +253,7 @@ public:
 	FORCEINLINE void DisconnectAll() { Disconnect(); }
 
 protected:
+public:
 	void Disconnect();
 	void Disconnect(FGMPKey Key);
 	template<bool bAllowDuplicate>

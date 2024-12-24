@@ -313,6 +313,7 @@ public:
 	FMessageBody* GetCurrentMessageBody() const;
 
 private:
+public:
 	struct FSigListener
 	{
 		template<typename T>
@@ -382,6 +383,7 @@ private:
 	void ResponseMessageImpl(FGMPKey RequestSequence, FTypedAddresses& Param, const FArrayTypeNames* RspTypes = nullptr, FSigSource InSigSrc = FSigSource::NullSigSrc);
 
 private:
+public:
 	//////////////////////////////////////////////////////////////////////////
 	// Send
 	FORCEINLINE FGMPKey SendObjectMessageImpl(FSignalBase* Ptr, const FName& MessageKey, FSigSource InSigSrc, FTypedAddresses& Param, std::nullptr_t) { return NotifyMessageImpl(Ptr, MessageKey, InSigSrc, Param); }
@@ -645,6 +647,7 @@ public:
 	FMessageHub();
 
 private:
+public:
 	FGMPSignalMap MessageSignals;
 
 	TSet<FName> CallbackMarks;
@@ -659,6 +662,7 @@ public:
 	static void GMPTrackLeave(const MSGKEY_TYPE* pTHIS);
 
 private:
+public:
 	struct FGMPTracker
 	{
 		FGMPTracker(const FName& InMsgKey, FString LocInfo);
