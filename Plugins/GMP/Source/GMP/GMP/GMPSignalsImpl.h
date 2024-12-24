@@ -265,7 +265,7 @@ public:
 	TSharedPtr<void> BindSignalConnection(FSigElm* SigElm) const { return SigElm ? BindSignalConnection(SigElm->GetGMPKey()) : TSharedPtr<void>{}; }
 
 protected:
-#if GMP_SIGNAL_WITH_GLOBAL_SIGELMSET
+public:
 	static void StaticDisconnect(FGMPKey Key);
 #endif
 

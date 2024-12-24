@@ -481,8 +481,8 @@ public:
 			}
 		});
 #endif
-
 #if PLATFORM_DESKTOP
+		/*
 		struct FHandleResult
 		{
 			FDelegateHandle Handle;
@@ -493,12 +493,13 @@ public:
 			FCoreUObjectDelegates::PostLoadMapWithWorld.Remove(*HandleResult);
 		});
 
-		GMP::OnGMPTagReady(FSimpleDelegate::CreateLambda([] {
-			FGMPHelper::UnsafeListenMessage(
-				MSGKEY("GameState.OnPostStartPlay"),
-				[](UWorld* NewWorld) { ProcessXCommandFromCmdline(NewWorld, TEXT("PostStartPlay")); },
-				1);
-		}));
+		//GMP::OnGMPTagReady(FSimpleDelegate::CreateLambda([] {
+		FGMPHelper::UnsafeListenMessage(
+			MSGKEY("GameState.OnPostStartPlay"),
+			[](UWorld* NewWorld) { ProcessXCommandFromCmdline(NewWorld, TEXT("PostStartPlay")); },
+			1);
+		//}));
+		*/
 #endif
 	}
 	virtual void ShutdownModule() override
