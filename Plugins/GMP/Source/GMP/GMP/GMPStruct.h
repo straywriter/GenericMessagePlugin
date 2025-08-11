@@ -609,6 +609,7 @@ struct GMP_API FMessageBody
 	static FGMPKey GetNextSequenceID();
 
 protected:
+public:
 	FMessageBody(FTypedAddresses& InParams, FName InName, FSigSource InSigSrc, FGMPKey Id = {})
 		: Params(InParams)
 		, MessageId(InName)

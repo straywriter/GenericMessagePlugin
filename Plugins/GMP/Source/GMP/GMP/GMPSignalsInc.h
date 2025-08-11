@@ -24,6 +24,7 @@ public:
 	virtual void Disconnect(FGMPKey Key) { GMPSignalHandle.Disconnect(Key); }
 
 protected:
+public:
 	friend class GMP::FMessageHub;
 	GMP::FSigHandle GMPSignalHandle;
 };

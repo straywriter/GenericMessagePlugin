@@ -151,5 +151,7 @@ public class GMP : ModuleRules
 				}
 			}
 		}
+		
+		PrivateDefinitions.Add("GMP_EXTEND_CONSOLE=0");
 	}
 }
