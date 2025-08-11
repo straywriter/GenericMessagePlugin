@@ -17,24 +17,6 @@
       "Type": "Runtime",
       "LoadingPhase": "PreDefault",
       "WhitelistPlatforms": [ "Win64", "Linux", "Mac", "IOS", "Android" ]
-    },
-    {
-      "Name": "GMPEditor",
-      "Type": "UncookedOnly",
-      "LoadingPhase": "PreDefault",
-      "WhitelistPlatforms": [ "Win64", "Linux", "Mac" ]
-    },
-    {
-      "Name": "MessageTags",
-      "Type": "UncookedOnly",
-      "LoadingPhase": "PreDefault",
-      "WhitelistPlatforms": [ "Win64", "Linux", "Mac" ]
-    },
-    {
-      "Name": "MessageTagsEditor",
-      "Type": "UncookedOnly",
-      "LoadingPhase": "PreDefault",
-      "WhitelistPlatforms": [ "Win64", "Linux", "Mac" ]
     }
   ],
   "Plugins": [
